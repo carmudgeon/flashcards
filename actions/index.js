@@ -1,10 +1,25 @@
-export const LIST_DECKS = 'LIST_DECK'
+import {saveDeckTitle} from "../utils/api";
 
+export const RECEIVE_DECKS = 'RECEIVE_DECKS'
+export const ADD_DECK = 'ADD_DECK'
 
-
-export function listDecks (decks) {
+export function receiveDecks (decks) {
     return {
-        type: LIST_DECKS,
+        type: RECEIVE_DECKS,
         decks,
+    }
+}
+
+export function addDeck (deck) {
+    return {
+        type: ADD_DECK,
+        deck
+    }
+}
+
+export function handleAddNewDeck(title) {
+    return (dispatch) => {
+        return saveDeckTitle(title)
+            .then(dispatch(addDeck(title)))
     }
 }

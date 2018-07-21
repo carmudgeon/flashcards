@@ -1,34 +1,19 @@
 import React, { Component } from 'react'
 import { View,Text, StyleSheet, Platform, FlatList } from 'react-native'
 import { connect } from 'react-redux'
-import { getDecks } from '../utils/api';
-import { receiveDecks } from '../actions';
 import { AppLoading} from 'expo'
-import DeckItem from './DeckItem';
 
 
-class DeckList extends Component {
+class NewDeck extends Component {
     state = {
         ready: false,
     }
 
     componentDidMount() {
-        const { dispatch } = this.props
-
-        getDecks()
-            .then((decks) => dispatch(receiveDecks(decks)))
-            .then(() => this.setState(() => ({ready: true})))
-    }
-
-    renderDeckItem({item}) {
-        return (
-            <DeckItem item={item}/>
-        )
     }
 
     render() {
 
-        const { decks } = this.props;
         const { ready } = this.state;
 
         if (ready === false) {
@@ -37,10 +22,7 @@ class DeckList extends Component {
 
         return (
             <View style={styles.container}>
-                <FlatList
-                    data={decks}
-                    renderItem={this.renderDeckItem}
-                />
+                <Text >New Deck</Text>
             </View>
         );
     }
@@ -59,4 +41,4 @@ function mapStateToProps(decks) {
     }
 }
 
-export default connect(mapStateToProps)(DeckList)
+export default connect(mapStateToProps)(NewDeck)

@@ -6,12 +6,12 @@ import { FontAwesome, Ionicons } from '@expo/vector-icons';
 import { TabNavigator } from 'react-navigation';
 import { Constants } from 'expo'
 
-import { purple, white } from './utils/colors';
+import { white, red } from './utils/colors';
 
 import reducer from './reducers';
 import middleware from './middleware';
 import DeckList from './components/DeckList';
-import AddCard from './components/AddCard';
+import NewDeck from './components/NewDeck';
 
 
 // Taken from UdacityFitness app
@@ -42,23 +42,23 @@ const Tabs = TabNavigator({
             tabBarLabel: 'Deck List',
             tabBarIcon: ({ tintColor }) => <Ionicons name='logo-buffer' size={30} color={tintColor} />
         },
-    }/*,
-    AddCard: {
-        screen: AddCard,
+    },
+    NewDeck: {
+        screen: NewDeck,
         navigationOptions: {
-            tabBarLabel: 'Add Card',
+            tabBarLabel: 'New Deck',
             tabBarIcon: ({ tintColor }) => <FontAwesome name='plus-square' size={30} color={tintColor} />
         },
-    },*/
+    },
 }, {
     navigationOptions: {
         header: null
     },
     tabBarOptions: {
-        activeTintColor: Platform.OS === 'ios' ? purple : white,
+        activeTintColor: Platform.OS === 'ios' ? red : white,
         style: {
             height: 56,
-            backgroundColor: Platform.OS === 'ios' ? white : purple,
+            backgroundColor: Platform.OS === 'ios' ? white : red,
             shadowColor: 'rgba(0, 0, 0, 0.24)',
             shadowOffset: {
                 width: 0,
@@ -79,7 +79,7 @@ export default class App extends React.Component {
     return (
         <Provider store={createStore(reducer, middleware)}>
             <View style={{flex: 1}}>
-                <UdaciStatusBar backgroundColor={purple} barStyle="light-content"/>
+                <UdaciStatusBar backgroundColor={red} barStyle="light-content"/>
                 <Tabs />
             </View>
         </Provider>
