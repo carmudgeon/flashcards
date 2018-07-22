@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View,Text, StyleSheet, Platform, FlatList } from 'react-native'
 import { connect } from 'react-redux'
-import { getDecks } from '../utils/api';
+import {clearLocalNotification, getDecks, setLocalNotification} from '../utils/api';
 import { receiveDecks } from '../actions';
 import { AppLoading} from 'expo'
 import DeckItem from './DeckItem';
@@ -18,6 +18,9 @@ class DeckList extends Component {
         getDecks()
             .then((decks) => dispatch(receiveDecks(decks)))
             .then(() => this.setState(() => ({ready: true})))
+
+        clearLocalNotification()
+            .then(setLocalNotification)
     }
 
     renderDeckItem({item}) {

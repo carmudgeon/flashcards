@@ -1,6 +1,7 @@
 import {AsyncStorage} from 'react-native'
 
 export const DECK_STORAGE_KEY = 'flashcards:decks'
+export const DECK_NOTIFICATION_KEY = 'flashcards:notifications'
 
 function setMockData() {
 
@@ -98,7 +99,7 @@ function setMockData() {
 }
 
 export function deckSetup(decks) {
-    return decks === null
+    return decks !== null
     ? setMockData()
     : JSON.parse(decks);
 }

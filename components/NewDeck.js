@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import CommonButton from './CommonButton';
 import {purple} from '../utils/colors'
 import {handleAddNewDeck} from '../actions';
+import {clearLocalNotification, setLocalNotification} from "../utils/api";
 
 const defaultState = {
     deckName: ''
@@ -21,7 +22,6 @@ class NewDeck extends Component {
         this.setState(() => ({
             ...defaultState
         }))
-
         navigate('DeckList')
     }
 

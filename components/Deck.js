@@ -4,6 +4,7 @@ import {black, gray} from "../utils/colors";
 import {connect} from "react-redux";
 import CommonButton from "./CommonButton";
 import NavigationService from "../utils/NavigationService";
+import {clearLocalNotification} from "../utils/api";
 
 class Deck extends Component {
 
@@ -19,6 +20,7 @@ class Deck extends Component {
 
     startQuiz = () => {
         NavigationService.navigate('Quiz', this.props.deck)
+        clearLocalNotification()
     }
 
     render() {
@@ -35,7 +37,10 @@ class Deck extends Component {
                     {deck.questions.length} {deck.questions.length === 1? 'card': 'cards'}
                 </Text>
                 <CommonButton onPress={this.addCard} style={styles.addCard}>Add Card</CommonButton>
-                <CommonButton onPress={this.startQuiz} style={styles.submit}>Start Quiz</CommonButton>
+                {deck.questions.length > 0
+                    ? <CommonButton onPress={this.startQuiz} style={styles.submit}>Start Quiz</CommonButton>
+                    : ''
+                }
             </View>
         )
     }
