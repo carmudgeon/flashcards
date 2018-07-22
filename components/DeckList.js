@@ -12,9 +12,9 @@ class DeckList extends Component {
         ready: false,
     }
 
-    componentDidMount() {
-        const { dispatch } = this.props
 
+    componentWillMount() {
+        const { dispatch } = this.props
         getDecks()
             .then((decks) => dispatch(receiveDecks(decks)))
             .then(() => this.setState(() => ({ready: true})))
@@ -22,7 +22,7 @@ class DeckList extends Component {
 
     renderDeckItem({item}) {
         return (
-            <DeckItem item={item}/>
+            <DeckItem item={item} />
         )
     }
 

@@ -1,16 +1,19 @@
 import React, {Component} from 'react'
 import {View, Text, StyleSheet, Platform, TouchableOpacity} from 'react-native'
 import {red, white} from "../utils/colors";
+import {connect} from "react-redux";
+import NavigationService from "../utils/NavigationService";
 
 class DeckItem extends Component {
 
     render() {
 
+
         const {item} = this.props
 
         return (
             <TouchableOpacity
-                onPress={() => console.log('Pressed!')}
+                onPress={() => NavigationService.navigate('Deck', item)}
             >
                 <View style={styles.item}>
                     <Text style={styles.title}>

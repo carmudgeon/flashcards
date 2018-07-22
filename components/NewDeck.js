@@ -1,48 +1,44 @@
-import React, { Component } from 'react'
-import { View,Text, TextInput, StyleSheet, Platform, FlatList } from 'react-native'
-import { connect } from 'react-redux'
+import React, {Component} from 'react'
+import {View, Text, TextInput, StyleSheet, Platform, FlatList} from 'react-native'
+import {connect} from 'react-redux'
 import CommonButton from './CommonButton';
-import { purple } from '../utils/colors'
+import {purple} from '../utils/colors'
 import {handleAddNewDeck} from '../actions';
 
 const defaultState = {
-    deckName: '',
-    toHome: false
+    deckName: ''
 }
 
 class NewDeck extends Component {
     state = defaultState
 
     handleSubmit = () => {
-        const { deckName } = this.state
-        const { dispatch } = this.props
+        const {deckName} = this.state
+        const {dispatch} = this.props
+        const {navigate} = this.props.navigation;
 
         dispatch(handleAddNewDeck(deckName))
         this.setState(() => ({
-            ...defaultState,
-            toHome: true
+            ...defaultState
         }))
+
+        navigate('DeckList')
     }
 
     handleTitleChange = (title) => {
-        this.setState({deckName : title})
+        this.setState({deckName: title})
     }
 
     render() {
-
-        const { deckName, toHome } = this.state
-
-        if(toHome === true){
-            //TODO add navigation to home
-        }
-
+        const {deckName} = this.state
         return (
 
             <View style={styles.container}>
                 <Text style={styles.title}>What is the title of your new deck?</Text>
                 <TextInput placeholder="Deck Title"
+                           value={deckName}
                            style={styles.input}
-                           onChangeText={this.handleTitleChange} />
+                           onChangeText={this.handleTitleChange}/>
                 <CommonButton onPress={this.handleSubmit}>Submit</CommonButton>
             </View>
         );
@@ -57,7 +53,7 @@ const styles = StyleSheet.create({
     title: {
         textAlign: 'center',
         fontSize: 40,
-        marginTop:60
+        marginTop: 60
     },
     input: {
         justifyContent: 'center',
@@ -71,9 +67,7 @@ const styles = StyleSheet.create({
 })
 
 function mapStateToProps() {
-    return {
-
-    }
+    return {}
 }
 
 export default connect(mapStateToProps)(NewDeck)
