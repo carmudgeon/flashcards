@@ -37,7 +37,7 @@ function setMockData() {
 }
 
 export function deckSetup(decks) {
-    return decks !== null
+    return decks === null
         ? setMockData()
         : JSON.parse(decks);
 }

@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6768b3d-035b-4904-ae69-3816b56a1d19" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CommonButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CommonButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Deck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DeckItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DeckItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DeckList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewDeck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewDeck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewQuestion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/NavigationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/NavigationService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/_decks.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/_decks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/api.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_decks.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_decks.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/_decks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="48" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="20">
+              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -103,12 +92,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               </first_editor>
               <second_editor />
             </state>
@@ -175,9 +164,9 @@
         <option value="$PROJECT_DIR$/components/NewQuestion.js" />
         <option value="$PROJECT_DIR$/components/Quiz.js" />
         <option value="$PROJECT_DIR$/reducers/index.js" />
-        <option value="$PROJECT_DIR$/utils/_decks.js" />
         <option value="$PROJECT_DIR$/utils/NavigationService.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/utils/_decks.js" />
       </list>
     </option>
   </component>
@@ -320,12 +309,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531702817572</updated>
-      <workItem from="1531702819188" duration="67135000" />
+      <workItem from="1531702819188" duration="67947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67135000" />
+    <option name="totallyTimeSpent" value="67947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2154" y="-225" width="1199" height="1058" extended-state="0" />
@@ -338,10 +327,10 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.7752341" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.7752341" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16767502" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16767502" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Learn" />
@@ -545,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/_decks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="48" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -575,11 +557,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/_decks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
         </state>
       </provider>
     </entry>

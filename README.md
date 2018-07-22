@@ -7,8 +7,8 @@ NOTE: I used yarn for the whole development process, so it is recommended to use
 
 1. yarn install
 2. yarn start
-3. validate that you have an android image or iOS emulator running before hitting the corresponding os letter
-   1. hit the letter 'i' for iOS or hit 'a' for android
+3. validate that you have an android emulator or iOS simulator running before hitting the corresponding os letter
+   I. hit the letter 'i' for iOS or hit 'a' for android
 4. that should be it
 
 ## Table of Contents
