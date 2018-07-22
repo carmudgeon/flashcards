@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { View,Text, StyleSheet, Platform, FlatList } from 'react-native'
-import { connect } from 'react-redux'
+import React, {Component} from 'react'
+import {View, StyleSheet, FlatList} from 'react-native'
+import {connect} from 'react-redux'
 import {clearLocalNotification, getDecks, setLocalNotification} from '../utils/api';
-import { receiveDecks } from '../actions';
-import { AppLoading} from 'expo'
+import {receiveDecks} from '../actions';
+import {AppLoading} from 'expo'
 import DeckItem from './DeckItem';
 
 
@@ -14,7 +14,7 @@ class DeckList extends Component {
 
 
     componentWillMount() {
-        const { dispatch } = this.props
+        const {dispatch} = this.props
         getDecks()
             .then((decks) => dispatch(receiveDecks(decks)))
             .then(() => this.setState(() => ({ready: true})))
@@ -25,17 +25,17 @@ class DeckList extends Component {
 
     renderDeckItem({item}) {
         return (
-            <DeckItem item={item} />
+            <DeckItem item={item}/>
         )
     }
 
     render() {
 
-        const { decks } = this.props;
-        const { ready } = this.state;
+        const {decks} = this.props;
+        const {ready} = this.state;
 
         if (ready === false) {
-            return <AppLoading />
+            return <AppLoading/>
         }
 
         return (

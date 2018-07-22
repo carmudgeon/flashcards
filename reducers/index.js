@@ -19,7 +19,7 @@ function decks(state = {}, action) {
                     ...state[action.deck],
                     [action.deck]: {
                         ...[action.deck]['questions'],
-                        questions : state[action.deck].questions.push(action.question)
+                        questions: state[action.deck].questions.push(action.question)
                     }
 
                 }

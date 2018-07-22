@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {View, Text, StyleSheet, Platform, TouchableOpacity} from 'react-native'
+import {View, Text, StyleSheet} from 'react-native'
 import {black, gray} from "../utils/colors";
 import {connect} from "react-redux";
 import CommonButton from "./CommonButton";
@@ -29,12 +29,12 @@ class Deck extends Component {
 
         return (
 
-            <View  style={styles.container}>
+            <View style={styles.container}>
                 <Text style={styles.title}>
                     {deck.title}
                 </Text>
                 <Text style={styles.subtitle}>
-                    {deck.questions.length} {deck.questions.length === 1? 'card': 'cards'}
+                    {deck.questions.length} {deck.questions.length === 1 ? 'card' : 'cards'}
                 </Text>
                 <CommonButton onPress={this.addCard} style={styles.addCard}>Add Card</CommonButton>
                 {deck.questions.length > 0
@@ -65,14 +65,14 @@ const styles = StyleSheet.create({
         color: gray,
         fontWeight: '300'
     },
-    addCard : {
+    addCard: {
         backgroundColor: 'transparent',
         color: black,
         borderWidth: 1,
         borderColor: black,
         margin: 10
     },
-    submit : {
+    submit: {
         backgroundColor: black,
         borderRadius: 20,
         borderWidth: 1,

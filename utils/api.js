@@ -6,6 +6,7 @@ export function getDecks() {
     return AsyncStorage.getItem(DECK_STORAGE_KEY).then(deckSetup);
 }
 
+// TODO did not used as i used Radux...
 export function getDeck(id) {
 
 }

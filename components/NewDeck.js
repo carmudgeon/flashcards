@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
-import {View, Text, TextInput, StyleSheet, Platform, FlatList} from 'react-native'
+import {View, Text, TextInput, StyleSheet} from 'react-native'
 import {connect} from 'react-redux'
 import CommonButton from './CommonButton';
 import {purple} from '../utils/colors'
 import {handleAddNewDeck} from '../actions';
-import {clearLocalNotification, setLocalNotification} from "../utils/api";
 
 const defaultState = {
     deckName: ''

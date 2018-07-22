@@ -2,6 +2,15 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
+NOTE: I used yarn for the whole development process, so it is recommended to use 'yarn' but feel free to try the following gide using
+'npm' 
+
+1. yarn install
+2. yarn start
+3. validate that you have an android image or iOS emulator running before hitting the corresponding os letter
+   1. hit the letter 'i' for iOS or hit 'a' for android
+4. that should be it
+
 ## Table of Contents
 
 * [Updating to New Releases](#updating-to-new-releases)

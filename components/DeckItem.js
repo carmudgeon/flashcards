@@ -1,13 +1,11 @@
 import React, {Component} from 'react'
 import {View, Text, StyleSheet, Platform, TouchableOpacity} from 'react-native'
 import {red, white} from "../utils/colors";
-import {connect} from "react-redux";
 import NavigationService from "../utils/NavigationService";
 
 class DeckItem extends Component {
 
     render() {
-
 
         const {item} = this.props
 

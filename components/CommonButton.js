@@ -1,8 +1,8 @@
 import React from 'react'
-import { Text, TouchableOpacity, StyleSheet, Platform } from 'react-native'
-import { purple, white, black } from '../utils/colors'
+import {Text, TouchableOpacity, StyleSheet} from 'react-native'
+import {purple, white, black} from '../utils/colors'
 
-export default function CommonButton ({ children, onPress, style = {} }) {
+export default function CommonButton({children, onPress, style = {}}) {
     return (
         <TouchableOpacity onPress={onPress}>
             <Text style={[styles.submit, style]}>{children}</Text>

@@ -57,7 +57,7 @@ class Quiz extends Component {
 
     handleToggle = () => {
         const {showAnswer} = this.state
-        this.setState({showAnswer : !showAnswer})
+        this.setState({showAnswer: !showAnswer})
     }
 
     render() {
@@ -87,9 +87,9 @@ class Quiz extends Component {
                 }
                 <Text style={styles.toggle} onPress={this.handleToggle}>
                     {showAnswer !== true
-                    ? 'Answer'
-                    : 'Question'
-                }</Text>
+                        ? 'Answer'
+                        : 'Question'
+                    }</Text>
                 <CommonButton style={styles.correct} onPress={this.handleCorrect}>Correct</CommonButton>
                 <CommonButton style={styles.incorrect} onPress={this.handleIncorrect}>Incorrect</CommonButton>
             </View>
@@ -120,12 +120,12 @@ const styles = StyleSheet.create({
         color: gray,
         fontWeight: '300'
     },
-    toggle : {
-        color : red2,
-        textAlign : 'center',
-        fontSize : 16,
+    toggle: {
+        color: red2,
+        textAlign: 'center',
+        fontSize: 16,
         fontWeight: 'bold',
-        paddingBottom:40
+        paddingBottom: 40
     },
     correct: {
         backgroundColor: green,

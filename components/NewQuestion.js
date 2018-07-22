@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
-import {View, Text, TextInput, StyleSheet, Platform, FlatList} from 'react-native'
-import { connect } from 'react-redux'
-import { AppLoading} from 'expo'
-import {handleAddNewQuestion, receiveDecks} from "../actions";
+import React, {Component} from 'react'
+import {View, TextInput, StyleSheet} from 'react-native'
+import {connect} from 'react-redux'
+import {handleAddNewQuestion} from "../actions";
 import CommonButton from "./CommonButton";
 import {purple} from "../utils/colors";
 import {getDecks} from "../utils/api";
 
 const defaultQuestion = {
-    question : '',
-    answer : ''
+    question: '',
+    answer: ''
 }
 
 class NewQuestion extends Component {
@@ -30,7 +29,7 @@ class NewQuestion extends Component {
         const {navigate} = this.props.navigation;
 
 
-        dispatch(handleAddNewQuestion(deck.title,{question, answer}))
+        dispatch(handleAddNewQuestion(deck.title, {question, answer}))
         this.setState(() => ({
             ...defaultQuestion
         }))

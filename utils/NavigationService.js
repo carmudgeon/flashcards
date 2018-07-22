@@ -1,6 +1,6 @@
-// NavigationService.js
+// NavigationService.js taken from the official react nativ documentation
 
-import { NavigationActions } from 'react-navigation';
+import {NavigationActions} from 'react-navigation';
 
 let _navigator;
 
@@ -24,6 +24,7 @@ function navigateBack() {
         NavigationActions.back()
     )
 }
+
 export default {
     navigate,
     navigateBack,
